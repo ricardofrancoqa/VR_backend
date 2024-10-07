@@ -1,0 +1,218 @@
+[
+  {
+    "id": "consulta-de-produtos-e-estabelecimentos-da-vr",
+    "uri": "features/gherkins/consulta_estabelecimento.feature",
+    "keyword": "Funcionalidade",
+    "name": "Consulta de produtos e estabelecimentos da VR",
+    "description": "Como um aplicação de serviço\nQuero consultar produtos e estabelecimentos\npara validar dados especificos",
+    "line": 3,
+    "elements": [
+      {
+        "id": "consulta-de-produtos-e-estabelecimentos-da-vr;consultar-estabelecimento-aleatório",
+        "keyword": "Cenario",
+        "name": "Consultar Estabelecimento Aleatório",
+        "description": "",
+        "line": 9,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "é enviada a requisição para consultar os estabelecimentos",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/consulta_estabelecimento_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 508501600
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "validar o retorno dos estabelecimentos e printar na tela um aleatório",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/consulta_estabelecimento_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9888300
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@consulta_aleatoria_estabelecimento",
+            "line": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "delimitar-frases-com-o-método-delimitador",
+    "uri": "features/gherkins/delimitador.feature",
+    "keyword": "Funcionalidade",
+    "name": "Delimitar frases com o método delimitador",
+    "description": "Como uma aplicação de serviço\nQuero delimitar uma frase\npara validar um método específico",
+    "line": 3,
+    "elements": [
+      {
+        "id": "delimitar-frases-com-o-método-delimitador;delimitar-a-mensagem-com-diferentes-entradas-e-marcadores;;2",
+        "keyword": "Esquema do Cenário",
+        "name": "Delimitar a mensagem com diferentes entradas e marcadores",
+        "description": "",
+        "line": 16,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "a string de entrada 'bananas, tomates # e ventiladores'",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/delimitador_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29600
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "os marcadores '[\"#\", \"!\"]'",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/delimitador_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32800
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "a saída esperada é: 'bananas, tomates'",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/delimitador_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@delimitador",
+            "line": 8
+          }
+        ]
+      },
+      {
+        "id": "delimitar-frases-com-o-método-delimitador;delimitar-a-mensagem-com-diferentes-entradas-e-marcadores;;3",
+        "keyword": "Esquema do Cenário",
+        "name": "Delimitar a mensagem com diferentes entradas e marcadores",
+        "description": "",
+        "line": 17,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "a string de entrada 'o rato roeu a roupa $ do rei % de roma'",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/delimitador_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9700
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "os marcadores '[\"%\", \"!\"]'",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/delimitador_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26800
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "a saída esperada é: 'o rato roeu a roupa $ do rei'",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/delimitador_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@delimitador",
+            "line": 8
+          }
+        ]
+      },
+      {
+        "id": "delimitar-frases-com-o-método-delimitador;delimitar-a-mensagem-com-diferentes-entradas-e-marcadores;;4",
+        "keyword": "Esquema do Cenário",
+        "name": "Delimitar a mensagem com diferentes entradas e marcadores",
+        "description": "",
+        "line": 18,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "a string de entrada 'the quick brown fox & jumped over * the lazy dog'",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/delimitador_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9600
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "os marcadores '[\"&\", \"*\", \"%\", \"!\"]'",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/delimitador_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26000
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "a saída esperada é: 'the quick brown fox'",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/delimitador_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@delimitador",
+            "line": 8
+          }
+        ]
+      }
+    ]
+  }
+]
